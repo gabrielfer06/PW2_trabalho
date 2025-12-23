@@ -169,3 +169,72 @@ nav ul li {
     padding: 2px 5px;
     font-size: 0.8em;
 }
+.category-header {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.category-header h1 {
+  font-size: 40px;
+}
+
+.category-header select {
+  padding: 8px;
+  margin-top: 15px;
+}
+
+/* ===== MELHORIAS VISUAIS CATEGORIA ===== */
+
+/* Cards mais juntos */
+.product-grid {
+    gap: 25px; /* antes 20px */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card mais limpo e moderno */
+.product {
+    padding: 20px 15px;
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.product:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+}
+
+/* Imagens maiores */
+.product img {
+    width: 170px;   /* antes 120px */
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+/* Nome do produto mais forte */
+.product p {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* Preço + botão alinhados */
+.price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.add-cart {
+    margin-left: 6px;
+    padding: 5px 12px;
+    font-size: 13px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+}
+
+.add-cart:hover {
+    background: #000;
+    color: #fff;
+}
