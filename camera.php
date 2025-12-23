@@ -1,17 +1,20 @@
+<?php
+session_start();
+$cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
+?>
 <!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Laptop - Gabs Tech</title>
+  <title>Camera - Gabs Tech</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <div class="logo">
-  <a href="index.html">Gabs Tech</a>
-</div>
-
+    <a href="index.php">Gabs Tech</a>
+  </div>
 
   <div class="search-box">
     <img src="imagens/search.png" class="search-icon">
@@ -22,24 +25,26 @@
     <span>Offer</span>
     <span>Shop</span>
 
-    <span>
+    <a href="perfil.php">
       <img src="imagens/user-interface.png" alt="Account">
-    </span>
+    </a>
 
-    <span class="cart">
+    <!-- Carrinho clicável -->
+    <a href="carrinho.php" class="cart">
       <img src="imagens/online-shopping (3).png" alt="Cart">
-      <span class="cart-count">0</span>
-    </span>
+      <span class="cart-count"><?= $cartCount ?></span>
+    </a>
   </div>
 </header>
+
 <nav>
   <ul>
-    <li><a href="laptop.html">Laptop</a></li>
-    <li><a href="camera.html">Camera</a></li>
-    <li><a href="mobile.html">Mobile & Tablets</a></li>
-    <li><a href="headphones.html">Headphones</a></li>
-    <li><a href="smartwatch.html">Smartwatches</a></li>
-    <li><a href="accessories.html">Accessories</a></li>
+    <li><a href="laptop.php">Laptop</a></li>
+    <li><a href="camera.php">Camera</a></li>
+    <li><a href="mobile.php">Mobile & Tablets</a></li>
+    <li><a href="headphones.php">Headphones</a></li>
+    <li><a href="smartwatch.php">Smartwatches</a></li>
+    <li><a href="accessories.php">Accessories</a></li>
     <button class="preorder">Pre-order Now</button>
   </ul>
 </nav>
@@ -61,29 +66,29 @@
     <div class="product">
       <img src="imagens/compact-camera.png">
       <p>Compact Camera</p>
-      <span class="price">139,00€</span>
-      <button class="add-cart">Add to cart</button>
+      <span class="price">139,00€</span><br>
+      <a href="add_to_cart.php?id=20" class="add-cart">Add to cart</a>
     </div>
 
     <div class="product">
       <img src="imagens/digital-camera.png">
       <p>Digital Camera</p>
-      <span class="price">500,00€</span>
-      <button class="add-cart">Add to cart</button>
+      <span class="price">500,00€</span><br>
+      <a href="add_to_cart.php?id=21" class="add-cart">Add to cart</a>
     </div>
 
     <div class="product">
       <img src="imagens/Dual-Pixel-camera.png">
       <p>Dual Pixel Camera</p>
-      <span class="price">150,00€</span>
-      <button class="add-cart">Add to cart</button>
+      <span class="price">150,00€</span><br>
+      <a href="add_to_cart.php?id=22" class="add-cart">Add to cart</a>
     </div>
 
     <div class="product">
       <img src="imagens/light-drones.png">
-      <p>Ligth Drones</p>
-      <span class="price">200,00€</span>
-      <button class="add-cart">Add to cart</button>
+      <p>Light Drones</p>
+      <span class="price">200,00€</span><br>
+      <a href="add_to_cart.php?id=23" class="add-cart">Add to cart</a>
     </div>
 
   </div>
