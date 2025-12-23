@@ -162,13 +162,16 @@ nav ul li {
 
 .sale {
     position: absolute;
-    top: 5px;
-    left: 5px;
-    background: red;
+    top: 15px;
+    left: 15px;
+    background: #e53935;
     color: #fff;
-    padding: 2px 5px;
-    font-size: 0.8em;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-weight: bold;
 }
+
 .category-header {
   text-align: center;
   margin: 40px 0;
@@ -194,11 +197,18 @@ nav ul li {
 
 /* Card mais limpo e moderno */
 .product {
-    padding: 20px 15px;
-    border: 1px solid #e6e6e6;
-    background: #fff;
-    transition: all 0.3s ease;
+    background: #f7f8fa;
+    border-radius: 10px;
+    padding: 20px;
+    height: 420px;                 /* 🔥 todos iguais */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    border: none;
 }
+
+
 
 .product:hover {
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
@@ -207,17 +217,28 @@ nav ul li {
 
 /* Imagens maiores */
 .product img {
-    width: 170px;   /* antes 120px */
-    height: 150px;
+    width: 100%;
+    height: 220px;                 /* 🔥 altura fixa */
+    object-fit: contain;
     margin-bottom: 15px;
 }
+
+
+
+
 
 /* Nome do produto mais forte */
 .product p {
     font-weight: 600;
     font-size: 15px;
-    margin-bottom: 10px;
+    margin: 15px 0;
+    height: 60px;           /* 🔥 todos iguais */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
 
 /* Preço + botão alinhados */
 .price {
@@ -237,4 +258,198 @@ nav ul li {
 .add-cart:hover {
     background: #000;
     color: #fff;
+}
+/* ===== CARRINHO LATERAL ===== */
+
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999;
+}
+
+.cart-panel {
+  width: 380px;
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.close-cart {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+}
+
+.cart-item {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.cart-item img {
+  width: 70px;
+}
+
+.cart-info h4 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.cart-info .price {
+  font-weight: bold;
+}
+
+.qty-box {
+  margin: 10px 0;
+}
+
+.remove-item {
+  font-size: 12px;
+  color: #777;
+  text-decoration: underline;
+}
+
+.cart-footer {
+  margin-top: auto;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.checkout {
+  width: 100%;
+  padding: 12px;
+  background: #ff5722;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+.product span.price,
+.product .add-cart {
+    margin-top: auto;
+}
+/* ===== PERFIL / LOGIN ===== */
+
+.profile-container {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7f8fa;
+}
+
+.profile-card {
+  background: #fff;
+  padding: 35px;
+  width: 320px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.profile-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.profile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-btn {
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+
+.profile-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.logout {
+  border-color: #e53935;
+  color: #e53935;
+}
+
+.logout:hover {
+  background: #e53935;
+}
+/* ===== CARRINHO ===== */
+
+.products {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.products h2 {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+table td:first-child {
+  text-align: left;
+}
+
+a {
+  color: #6a0dad;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  margin-top: 20px;
+  text-align: right;
 }
