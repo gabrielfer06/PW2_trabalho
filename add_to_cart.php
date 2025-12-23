@@ -4,7 +4,7 @@ session_start();
 $id = $_GET['id'] ?? null;
 
 if (!$id) {
-    header("Location: index.html");
+    header("Location: index.php");
     exit();
 }
 
@@ -17,7 +17,7 @@ $produtos = [
 ];
 
 if (!isset($produtos[$id])) {
-    header("Location: index.html");
+    header("Location: index.php");
     exit();
 }
 
