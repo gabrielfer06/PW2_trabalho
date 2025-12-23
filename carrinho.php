@@ -13,7 +13,7 @@ $carrinho = $_SESSION['carrinho'] ?? [];
 
 <header>
   <div class="logo">
-    <a href="index.html">Gabs Tech</a>
+    <a href="index.php">Gabs Tech</a>
   </div>
 </header>
 
