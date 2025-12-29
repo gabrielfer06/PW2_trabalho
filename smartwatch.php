@@ -29,7 +29,6 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
       <img src="imagens/user-interface.png" alt="Account">
     </a>
 
-    <!-- Carrinho -->
     <a href="carrinho.php" class="cart">
       <img src="imagens/online-shopping (3).png" alt="Cart">
       <span class="cart-count"><?= $cartCount ?></span>
@@ -63,32 +62,60 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
 <section class="products">
   <div class="product-grid">
 
+    <!-- Produto 30 -->
     <div class="product">
       <img src="imagens/smartwatch-gallery.png">
       <p>Smartwatch Series</p>
       <span class="price">50,00€</span><br>
-      <a href="add_to_cart.php?id=30" class="add-cart">Add to cart</a>
+
+      <form action="add_to_cart.php" method="POST">
+        <input type="hidden" name="id" value="30">
+        <input type="hidden" name="nome" value="Smartwatch Series">
+        <input type="hidden" name="preco" value="50.00">
+        <button type="submit" class="add-cart">Add to cart</button>
+      </form>
     </div>
 
+    <!-- Produto 31 -->
     <div class="product">
       <img src="imagens/smartwatch-running.png">
       <p>Smartwatch Running</p>
       <span class="price">90,00€</span><br>
-      <a href="add_to_cart.php?id=31" class="add-cart">Add to cart</a>
+
+      <form action="add_to_cart.php" method="POST">
+        <input type="hidden" name="id" value="31">
+        <input type="hidden" name="nome" value="Smartwatch Running">
+        <input type="hidden" name="preco" value="90.00">
+        <button type="submit" class="add-cart">Add to cart</button>
+      </form>
     </div>
 
+    <!-- Produto 32 -->
     <div class="product">
       <img src="imagens/touchscreen_smartwatch.png">
       <p>Touchscreen Smartwatch</p>
       <span class="price">60,00€</span><br>
-      <a href="add_to_cart.php?id=32" class="add-cart">Add to cart</a>
+
+      <form action="add_to_cart.php" method="POST">
+        <input type="hidden" name="id" value="32">
+        <input type="hidden" name="nome" value="Touchscreen Smartwatch">
+        <input type="hidden" name="preco" value="60.00">
+        <button type="submit" class="add-cart">Add to cart</button>
+      </form>
     </div>
 
+    <!-- Produto 33 -->
     <div class="product">
       <img src="imagens/waterproof-smartwatch-1 (1).png">
       <p>Waterproof Smartwatch</p>
       <span class="price">50,00€</span><br>
-      <a href="add_to_cart.php?id=33" class="add-cart">Add to cart</a>
+
+      <form action="add_to_cart.php" method="POST">
+        <input type="hidden" name="id" value="33">
+        <input type="hidden" name="nome" value="Waterproof Smartwatch">
+        <input type="hidden" name="preco" value="50.00">
+        <button type="submit" class="add-cart">Add to cart</button>
+      </form>
     </div>
 
   </div>

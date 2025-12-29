@@ -86,7 +86,13 @@ $carrinhoCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0
       <p class="product-name">Waterproof Smartwatch</p>
       <div class="product-details">
         <span class="price">€129.99</span><br>
-        <a href="add_to_cart.php?id=1" class="add-cart">Add to cart</a>
+
+        <form action="add_to_cart.php" method="POST">
+          <input type="hidden" name="id" value="1">
+          <input type="hidden" name="nome" value="Waterproof Smartwatch">
+          <input type="hidden" name="preco" value="129.99">
+          <button type="submit" class="add-cart">Add to cart</button>
+        </form>
       </div>
     </div>
 
@@ -97,7 +103,13 @@ $carrinhoCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0
       <p class="product-name">Wireless Headphone</p>
       <div class="product-details">
         <span class="price">€89.99</span><br>
-        <a href="add_to_cart.php?id=2" class="add-cart">Add to cart</a>
+
+        <form action="add_to_cart.php" method="POST">
+          <input type="hidden" name="id" value="2">
+          <input type="hidden" name="nome" value="Wireless Headphone">
+          <input type="hidden" name="preco" value="89.99">
+          <button type="submit" class="add-cart">Add to cart</button>
+        </form>
       </div>
     </div>
 
@@ -107,7 +119,13 @@ $carrinhoCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0
       <p class="product-name">Advanced Laptop</p>
       <div class="product-details">
         <span class="price">€999.99</span><br>
-        <a href="add_to_cart.php?id=3" class="add-cart">Add to cart</a>
+
+        <form action="add_to_cart.php" method="POST">
+          <input type="hidden" name="id" value="3">
+          <input type="hidden" name="nome" value="Advanced Laptop">
+          <input type="hidden" name="preco" value="999.99">
+          <button type="submit" class="add-cart">Add to cart</button>
+        </form>
       </div>
     </div>
 
@@ -118,7 +136,13 @@ $carrinhoCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0
       <p class="product-name">Light Drone</p>
       <div class="product-details">
         <span class="price">€249.99</span><br>
-        <a href="add_to_cart.php?id=4" class="add-cart">Add to cart</a>
+
+        <form action="add_to_cart.php" method="POST">
+          <input type="hidden" name="id" value="4">
+          <input type="hidden" name="nome" value="Light Drone">
+          <input type="hidden" name="preco" value="249.99">
+          <button type="submit" class="add-cart">Add to cart</button>
+        </form>
       </div>
     </div>
 

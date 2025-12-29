@@ -21,11 +21,11 @@ $user = $_SESSION['user'];
 
 <header>
   <div class="logo">
-    <a href="index.html">Gabs Tech</a>
+    <a href="index.php">Gabs Tech</a>
   </div>
 
   <div class="icons">
-    <span><a href="index.html">Home</a></span>
+    <span><a href="index.php">Home</a></span>
     <span><a href="carrinho.php">Carrinho</a></span>
   </div>
 </header>

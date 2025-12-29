@@ -58,6 +58,11 @@ foreach ($carrinho as $id => $item) {
 
   <h3>Total: <?php echo number_format($totalGeral, 2); ?>€</h3>
 
+  <!-- Botão de checkout -->
+  <form action="checkout.php" method="POST">
+    <button type="submit" class="checkout-btn">Finalizar Compra</button>
+  </form>
+
 <?php } ?>
 
 </section>

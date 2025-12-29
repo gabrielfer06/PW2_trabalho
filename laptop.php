@@ -29,7 +29,6 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
       <img src="imagens/user-interface.png" alt="Account">
     </a>
 
-    <!-- Carrinho clicável -->
     <a href="carrinho.php" class="cart">
       <img src="imagens/online-shopping (3).png" alt="Cart">
       <span class="cart-count"><?= $cartCount ?></span>
@@ -63,32 +62,60 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
 <section class="products">
   <div class="product-grid">
 
+    <!-- Produto 10 -->
     <div class="product">
       <img src="imagens/advanced-laptop.png">
       <p>Advanced Laptop</p>
       <span class="price">€300.00</span><br>
-      <a href="add_to_cart.php?id=10" class="add-cart">Add to cart</a>
+
+      <form action="add_to_cart.php" method="POST">
+        <input type="hidden" name="id" value="10">
+        <input type="hidden" name="nome" value="Advanced Laptop">
+        <input type="hidden" name="preco" value="300.00">
+        <button type="submit" class="add-cart">Add to cart</button>
+      </form>
     </div>
 
+    <!-- Produto 11 -->
     <div class="product">
       <img src="imagens/foldable-laptops.png">
       <p>Foldable Laptop</p>
       <span class="price">€200.00</span><br>
-      <a href="add_to_cart.php?id=11" class="add-cart">Add to cart</a>
+
+      <form action="add_to_cart.php" method="POST">
+        <input type="hidden" name="id" value="11">
+        <input type="hidden" name="nome" value="Foldable Laptop">
+        <input type="hidden" name="preco" value="200.00">
+        <button type="submit" class="add-cart">Add to cart</button>
+      </form>
     </div>
 
+    <!-- Produto 12 -->
     <div class="product">
       <img src="imagens/gaming-laptop.png">
       <p>Gaming Laptop</p>
       <span class="price">€500.00</span><br>
-      <a href="add_to_cart.php?id=12" class="add-cart">Add to cart</a>
+
+      <form action="add_to_cart.php" method="POST">
+        <input type="hidden" name="id" value="12">
+        <input type="hidden" name="nome" value="Gaming Laptop">
+        <input type="hidden" name="preco" value="500.00">
+        <button type="submit" class="add-cart">Add to cart</button>
+      </form>
     </div>
 
+    <!-- Produto 13 -->
     <div class="product">
       <img src="imagens/space-edition-laptop.png">
       <p>Space Edition Laptop</p>
       <span class="price">€150.00</span><br>
-      <a href="add_to_cart.php?id=13" class="add-cart">Add to cart</a>
+
+      <form action="add_to_cart.php" method="POST">
+        <input type="hidden" name="id" value="13">
+        <input type="hidden" name="nome" value="Space Edition Laptop">
+        <input type="hidden" name="preco" value="150.00">
+        <button type="submit" class="add-cart">Add to cart</button>
+      </form>
     </div>
 
   </div>
