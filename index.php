@@ -22,13 +22,10 @@ $carrinhoCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0
   </div>
 
   <div class="icons">
-    <span>Offer</span>
-    <span>Shop</span>
-
     <a href="perfil.php">
       <img src="imagens/user-interface.png" alt="Account">
     </a>
-
+       
     <a href="carrinho.php" class="cart-link">
       <img src="imagens/online-shopping (3).png" alt="cart">
       Cart (<?php echo $carrinhoCount; ?>)
