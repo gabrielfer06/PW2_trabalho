@@ -76,10 +76,11 @@ $carrinhoCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0
 
   <div class="product-grid">
 
-    <!-- Produto 1 -->
     <div class="product">
       <span class="sale">Sale</span>
-      <img src="imagens/waterproof-smartwatch-1.png">
+      <a href="detalhes_produto.php?id=1">
+        <img src="imagens/waterproof-smartwatch-1.png" alt="Waterproof Smartwatch">
+      </a>
       <p class="product-name">Waterproof Smartwatch</p>
       <div class="product-details">
         <span class="price">€129.99</span><br>
@@ -93,10 +94,11 @@ $carrinhoCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0
       </div>
     </div>
 
-    <!-- Produto 2 -->
     <div class="product">
       <span class="sale">Sale</span>
-      <img src="imagens/wireless-headphone.png">
+      <a href="detalhes_produto.php?id=2">
+        <img src="imagens/wireless-headphone.png" alt="Wireless Headphone">
+      </a>
       <p class="product-name">Wireless Headphone</p>
       <div class="product-details">
         <span class="price">€89.99</span><br>
@@ -110,9 +112,10 @@ $carrinhoCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0
       </div>
     </div>
 
-    <!-- Produto 3 -->
     <div class="product">
-      <img src="imagens/advanced-laptop.png">
+      <a href="detalhes_produto.php?id=3">
+        <img src="imagens/advanced-laptop.png" alt="Advanced Laptop">
+      </a>
       <p class="product-name">Advanced Laptop</p>
       <div class="product-details">
         <span class="price">€999.99</span><br>
@@ -126,10 +129,11 @@ $carrinhoCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0
       </div>
     </div>
 
-    <!-- Produto 4 -->
     <div class="product">
       <span class="sale">Sale</span>
-      <img src="imagens/light-drones.png">
+      <a href="detalhes_produto.php?id=4">
+        <img src="imagens/light-drones.png" alt="Light Drone">
+      </a>
       <p class="product-name">Light Drone</p>
       <div class="product-details">
         <span class="price">€249.99</span><br>
@@ -145,6 +149,5 @@ $carrinhoCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0
 
   </div>
 </section>
-
 </body>
 </html>

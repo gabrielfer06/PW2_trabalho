@@ -60,72 +60,78 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
 </section>
 
 <section class="products">
+  <section class="products">
   <div class="product-grid">
 
-    <!-- Produto 30 -->
     <div class="product">
-      <img src="imagens/bluetooth-airpods.png">
+      <a href="detalhes_produto.php?id=40">
+        <img src="imagens/bluetooth-airpods.png">
+      </a>
       <p>Bluetooth Airpods</p>
       <span class="price">70,00€</span><br>
 
       <form action="add_to_cart.php" method="POST">
-        <input type="hidden" name="id" value="30">
+        <input type="hidden" name="id" value="40">
         <input type="hidden" name="nome" value="Bluetooth Airpods">
         <input type="hidden" name="preco" value="70.00">
         <button type="submit" class="add-cart">Add to cart</button>
       </form>
     </div>
 
-    <!-- Produto 31 -->
     <div class="product">
-      <img src="imagens/case-airpods.png">
+      <a href="detalhes_produto.php?id=41">
+        <img src="imagens/case-airpods.png">
+      </a>
       <p>Case Airpods</p>
       <span class="price">85,00€</span><br>
 
       <form action="add_to_cart.php" method="POST">
-        <input type="hidden" name="id" value="31">
+        <input type="hidden" name="id" value="41">
         <input type="hidden" name="nome" value="Case Airpods">
         <input type="hidden" name="preco" value="85.00">
         <button type="submit" class="add-cart">Add to cart</button>
       </form>
     </div>
 
-    <!-- Produto 32 -->
     <div class="product">
-      <img src="imagens/waterproof-headphones.png">
+      <a href="detalhes_produto.php?id=42">
+        <img src="imagens/waterproof-headphones.png">
+      </a>
       <p>Waterproof Headphones</p>
       <span class="price">100,00€</span><br>
 
       <form action="add_to_cart.php" method="POST">
-        <input type="hidden" name="id" value="32">
+        <input type="hidden" name="id" value="42">
         <input type="hidden" name="nome" value="Waterproof Headphones">
         <input type="hidden" name="preco" value="100.00">
         <button type="submit" class="add-cart">Add to cart</button>
       </form>
     </div>
 
-    <!-- Produto 33 -->
     <div class="product">
-      <img src="imagens/wired-headphones.png">
+      <a href="detalhes_produto.php?id=43">
+        <img src="imagens/wired-headphones.png">
+      </a>
       <p>Wired Headphones</p>
       <span class="price">50,00€</span><br>
 
       <form action="add_to_cart.php" method="POST">
-        <input type="hidden" name="id" value="33">
+        <input type="hidden" name="id" value="43">
         <input type="hidden" name="nome" value="Wired Headphones">
         <input type="hidden" name="preco" value="50.00">
         <button type="submit" class="add-cart">Add to cart</button>
       </form>
     </div>
 
-    <!-- Produto 34 -->
     <div class="product">
-      <img src="imagens/wireless-headphone (1).png">
+      <a href="detalhes_produto.php?id=44">
+        <img src="imagens/wireless-headphone (1).png">
+      </a>
       <p>Wireless Headphones</p>
       <span class="price">150,00€</span><br>
 
       <form action="add_to_cart.php" method="POST">
-        <input type="hidden" name="id" value="34">
+        <input type="hidden" name="id" value="44">
         <input type="hidden" name="nome" value="Wireless Headphones">
         <input type="hidden" name="preco" value="150.00">
         <button type="submit" class="add-cart">Add to cart</button>
@@ -133,6 +139,7 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
     </div>
 
   </div>
+</section>
 </section>
 
 <script src="script.js"></script>

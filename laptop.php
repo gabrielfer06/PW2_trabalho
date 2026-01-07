@@ -60,11 +60,13 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
 </section>
 
 <section class="products">
+  <section class="products">
   <div class="product-grid">
 
-    <!-- Produto 10 -->
     <div class="product">
-      <img src="imagens/advanced-laptop.png">
+      <a href="detalhes_produto.php?id=10">
+        <img src="imagens/advanced-laptop.png">
+      </a>
       <p>Advanced Laptop</p>
       <span class="price">€300.00</span><br>
 
@@ -76,9 +78,10 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
       </form>
     </div>
 
-    <!-- Produto 11 -->
     <div class="product">
-      <img src="imagens/foldable-laptops.png">
+      <a href="detalhes_produto.php?id=11">
+        <img src="imagens/foldable-laptops.png">
+      </a>
       <p>Foldable Laptop</p>
       <span class="price">€200.00</span><br>
 
@@ -90,9 +93,10 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
       </form>
     </div>
 
-    <!-- Produto 12 -->
     <div class="product">
-      <img src="imagens/gaming-laptop.png">
+      <a href="detalhes_produto.php?id=12">
+        <img src="imagens/gaming-laptop.png">
+      </a>
       <p>Gaming Laptop</p>
       <span class="price">€500.00</span><br>
 
@@ -104,9 +108,10 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
       </form>
     </div>
 
-    <!-- Produto 13 -->
     <div class="product">
-      <img src="imagens/space-edition-laptop.png">
+      <a href="detalhes_produto.php?id=13">
+        <img src="imagens/space-edition-laptop.png">
+      </a>
       <p>Space Edition Laptop</p>
       <span class="price">€150.00</span><br>
 
@@ -120,6 +125,7 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
 
   </div>
 </section>
+
 
 <script src="script.js"></script>
 </body>

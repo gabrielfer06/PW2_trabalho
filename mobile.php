@@ -60,14 +60,15 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
 </section>
 
 <section class="products">
+  <section class="products">
   <div class="product-grid">
 
-    <!-- Produto 20 -->
     <div class="product">
-      <img src="imagens/advanced-smartphone.png">
+      <a href="detalhes_produto.php?id=20">
+        <img src="imagens/advanced-smartphone.png">
+      </a>
       <p>Advanced Smartphone</p>
       <span class="price">150,00€</span><br>
-
       <form action="add_to_cart.php" method="POST">
         <input type="hidden" name="id" value="20">
         <input type="hidden" name="nome" value="Advanced Smartphone">
@@ -76,12 +77,12 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
       </form>
     </div>
 
-    <!-- Produto 21 -->
     <div class="product">
-      <img src="imagens/Android-Pro-Smartphone.png">
+      <a href="detalhes_produto.php?id=21">
+        <img src="imagens/Android-Pro-Smartphone.png">
+      </a>
       <p>Android Pro Smartphone</p>
       <span class="price">139,99€</span><br>
-
       <form action="add_to_cart.php" method="POST">
         <input type="hidden" name="id" value="21">
         <input type="hidden" name="nome" value="Android Pro Smartphone">
@@ -90,12 +91,12 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
       </form>
     </div>
 
-    <!-- Produto 22 -->
     <div class="product">
-      <img src="imagens/Lightweight-Tablet.png">
+      <a href="detalhes_produto.php?id=22">
+        <img src="imagens/Lightweight-Tablet.png">
+      </a>
       <p>Lightweight Tablet</p>
       <span class="price">120,00€</span><br>
-
       <form action="add_to_cart.php" method="POST">
         <input type="hidden" name="id" value="22">
         <input type="hidden" name="nome" value="Lightweight Tablet">
@@ -104,12 +105,12 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
       </form>
     </div>
 
-    <!-- Produto 23 -->
     <div class="product">
-      <img src="imagens/Triple-camera-Smartphone.png">
+      <a href="detalhes_produto.php?id=23">
+        <img src="imagens/Triple-camera-Smartphone.png">
+      </a>
       <p>Triple Camera Smartphone</p>
       <span class="price">180,00€</span><br>
-
       <form action="add_to_cart.php" method="POST">
         <input type="hidden" name="id" value="23">
         <input type="hidden" name="nome" value="Triple Camera Smartphone">
@@ -119,6 +120,7 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
     </div>
 
   </div>
+</section>
 </section>
 
 <script src="script.js"></script>

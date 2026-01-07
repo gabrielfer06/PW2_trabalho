@@ -60,11 +60,10 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
 </section>
 
 <section class="products">
-  <div class="product-grid">
-
-    <!-- Produto 30 -->
-    <div class="product">
-      <img src="imagens/smartwatch-gallery.png">
+  <div class="product-grid"> <div class="product">
+      <a href="detalhes_produto.php?id=30">
+        <img src="imagens/smartwatch-gallery.png" alt="Smartwatch Series">
+      </a>
       <p>Smartwatch Series</p>
       <span class="price">50,00€</span><br>
 
@@ -76,9 +75,10 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
       </form>
     </div>
 
-    <!-- Produto 31 -->
     <div class="product">
-      <img src="imagens/smartwatch-running.png">
+      <a href="detalhes_produto.php?id=31">
+        <img src="imagens/smartwatch-running.png" alt="Smartwatch Running">
+      </a>
       <p>Smartwatch Running</p>
       <span class="price">90,00€</span><br>
 
@@ -90,9 +90,10 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
       </form>
     </div>
 
-    <!-- Produto 32 -->
     <div class="product">
-      <img src="imagens/touchscreen_smartwatch.png">
+      <a href="detalhes_produto.php?id=32">
+        <img src="imagens/touchscreen_smartwatch.png" alt="Touchscreen Smartwatch">
+      </a>
       <p>Touchscreen Smartwatch</p>
       <span class="price">60,00€</span><br>
 
@@ -104,9 +105,10 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
       </form>
     </div>
 
-    <!-- Produto 33 -->
     <div class="product">
-      <img src="imagens/waterproof-smartwatch-1 (1).png">
+      <a href="detalhes_produto.php?id=33">
+        <img src="imagens/waterproof-smartwatch-1 (1).png" alt="Waterproof Smartwatch">
+      </a>
       <p>Waterproof Smartwatch</p>
       <span class="price">50,00€</span><br>
 
@@ -118,8 +120,7 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
       </form>
     </div>
 
-  </div>
-</section>
+  </div> </section>
 
 <script src="script.js"></script>
 </body>

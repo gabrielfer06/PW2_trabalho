@@ -62,56 +62,60 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
 <section class="products">
   <div class="product-grid">
 
-    <!-- Produto 20 -->
     <div class="product">
-      <img src="imagens/compact-camera.png">
+      <a href="detalhes_produto.php?id=60">
+        <img src="imagens/compact-camera.png" alt="Compact Camera">
+      </a>
       <p>Compact Camera</p>
       <span class="price">139,00€</span><br>
 
       <form action="add_to_cart.php" method="POST">
-        <input type="hidden" name="id" value="20">
+        <input type="hidden" name="id" value="60">
         <input type="hidden" name="nome" value="Compact Camera">
         <input type="hidden" name="preco" value="139.00">
         <button type="submit" class="add-cart">Add to cart</button>
       </form>
     </div>
 
-    <!-- Produto 21 -->
     <div class="product">
-      <img src="imagens/digital-camera.png">
+      <a href="detalhes_produto.php?id=61">
+        <img src="imagens/digital-camera.png" alt="Digital Camera">
+      </a>
       <p>Digital Camera</p>
       <span class="price">500,00€</span><br>
 
       <form action="add_to_cart.php" method="POST">
-        <input type="hidden" name="id" value="21">
+        <input type="hidden" name="id" value="61">
         <input type="hidden" name="nome" value="Digital Camera">
         <input type="hidden" name="preco" value="500.00">
         <button type="submit" class="add-cart">Add to cart</button>
       </form>
     </div>
 
-    <!-- Produto 22 -->
     <div class="product">
-      <img src="imagens/Dual-Pixel-camera.png">
+      <a href="detalhes_produto.php?id=62">
+        <img src="imagens/Dual-Pixel-camera.png" alt="Dual Pixel Camera">
+      </a>
       <p>Dual Pixel Camera</p>
       <span class="price">150,00€</span><br>
 
       <form action="add_to_cart.php" method="POST">
-        <input type="hidden" name="id" value="22">
+        <input type="hidden" name="id" value="62">
         <input type="hidden" name="nome" value="Dual Pixel Camera">
         <input type="hidden" name="preco" value="150.00">
         <button type="submit" class="add-cart">Add to cart</button>
       </form>
     </div>
 
-    <!-- Produto 23 -->
     <div class="product">
-      <img src="imagens/light-drones.png">
+      <a href="detalhes_produto.php?id=63">
+        <img src="imagens/light-drones.png" alt="Light Drones">
+      </a>
       <p>Light Drones</p>
       <span class="price">200,00€</span><br>
 
       <form action="add_to_cart.php" method="POST">
-        <input type="hidden" name="id" value="23">
+        <input type="hidden" name="id" value="63">
         <input type="hidden" name="nome" value="Light Drones">
         <input type="hidden" name="preco" value="200.00">
         <button type="submit" class="add-cart">Add to cart</button>
