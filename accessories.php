@@ -62,54 +62,77 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
 
 <section class="products">
   <div class="product-grid">
-
+<!-- Produto 40 -->
     <div class="product">
       <img src="imagens/case-airpods.png">
       <p>Case Airpods</p>
       <span class="price">85,00€</span><br>
-      <a href="add_to_cart.php?id=1" class="add-cart">Add to cart</a>
+      <form action="add_to_cart.php" method="POST">
+        <input type="hidden" name="id" value="40">
+        <input type="hidden" name="nome" value="Case Airpods">
+        <input type="hidden" name="preco" value="85.00">
+      <button type="submit" class="add-cart">Add to cart</a>
     </div>
-
+<!-- Produto 4 -->
     <div class="product">
       <img src="imagens/light-drones.png">
       <p>Light Drone</p>
       <span class="price">249,99€</span><br>
-      <a href="add_to_cart.php?id=2" class="add-cart">Add to cart</a>
+      <form action="add_to_cart.php" method="POST">
+        <input type="hidden" name="id" value="4">
+        <input type="hidden" name="nome" value="Light Drone">
+        <input type="hidden" name="preco" value="249.99">
+      <button type="submit" class="add-cart">Add to cart</a>
     </div>
-
+<!-- Produto 41-->
     <div class="product">
       <img src="imagens/portable-bluetooth-speaker.png">
       <p>Portable Bluetooth Speaker</p>
       <span class="price">59,99€</span><br>
-      <a href="add_to_cart.php?id=3" class="add-cart">Add to cart</a>
+      <form action="add_to_cart.php" method="POST">
+        <input type="hidden" name="id" value="41">
+        <input type="hidden" name="nome" value="Portable Bluetooth Speaker">
+        <input type="hidden" name="preco" value="59.99">
+      <button type="submit" class="add-cart">Add to cart</a>
     </div>
-
+<!-- Produto 30 -->
     <div class="product">
       <img src="imagens/smartwatch-gallery.png">
       <p>Smartwatch Series</p>
       <span class="price">50,00€</span><br>
-      <a href="add_to_cart.php?id=4" class="add-cart">Add to cart</a>
+      <form action="add_to_cart.php" method="POST">
+        <input type="hidden" name="id" value="30">
+        <input type="hidden" name="nome" value="Smartwatch Series">
+        <input type="hidden" name="preco" value="50.00">
+        <button type="submit" class="add-cart">Add to cart</button>
+      </form>
     </div>
 
-    <div class="product">
-      <img src="imagens/smartwatch-running.png">
-      <p>Smartwatch Running</p>
-      <span class="price">90,00€</span><br>
-      <a href="add_to_cart.php?id=5" class="add-cart">Add to cart</a>
-    </div>
 
+     <!-- Produto 32 -->
     <div class="product">
       <img src="imagens/waterproof-headphones.png">
       <p>Waterproof Headphones</p>
       <span class="price">100,00€</span><br>
-      <a href="add_to_cart.php?id=6" class="add-cart">Add to cart</a>
+      <form action="add_to_cart.php" method="POST">
+        <input type="hidden" name="id" value="32">
+        <input type="hidden" name="nome" value="Waterproof Headphones">
+        <input type="hidden" name="preco" value="100.00">
+        <button type="submit" class="add-cart">Add to cart</button>
+      </form>
     </div>
 
+     <!-- Produto 33 -->
     <div class="product">
       <img src="imagens/waterproof-smartwatch-1 (1).png">
       <p>Waterproof Smartwatch</p>
       <span class="price">50,00€</span><br>
-      <a href="add_to_cart.php?id=7" class="add-cart">Add to cart</a>
+      <form action="add_to_cart.php" method="POST">
+        <input type="hidden" name="id" value="33">
+        <input type="hidden" name="nome" value="Waterproof Smartwatch">
+        <input type="hidden" name="preco" value="50.00">
+        <button type="submit" class="add-cart">Add to cart</button>
+      </form>
     </div>
 
   </div>

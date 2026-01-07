@@ -185,10 +185,25 @@ nav ul li {
   padding: 8px;
   margin-top: 15px;
 }
+.btn-explore {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f0f0f0; 
+    color: black;
+    text-decoration: none; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
 
-/* ===== MELHORIAS VISUAIS CATEGORIA ===== */
+.btn-explore:hover {
+    background-color: #e0e0e0; 
+}
 
-/* Cards mais juntos */
+
+
+
 .product-grid {
     gap: 25px; /* antes 20px */
     max-width: 1200px;

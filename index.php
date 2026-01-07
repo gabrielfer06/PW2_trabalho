@@ -49,8 +49,8 @@ $carrinhoCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0
 <!-- Banner -->
 <section class="banner">
   <div class="main-banner">
-    <h1>Purchase Ultimate Tablets with Pen</h1>
-    <p>Fica consequat duis enim velit mollit exercitation veniam consequat sunt nostrud amet.</p>
+    <h1>Tecnologia de Elite para o teu Setup</h1>
+    <p>Encontra os componentes e computadores de alta performance que elevam o teu trabalho e o teu jogo a outro nível.</p>
     <button>Shop now</button>
     <img src="imagens/Lightweight-Tablet.png" alt="Tablet">
   </div>
@@ -59,13 +59,13 @@ $carrinhoCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0
     <div class="side-banner">
       <img src="imagens/waterproof-smartwatch-1.png" alt="Smart Watch">
       <p>Smart Watch</p>
-      <button>Explore</button>
+      <a href="smartwatch.php" class="btn-explore">Explore</a>
     </div>
 
     <div class="side-banner">
       <img src="imagens/wireless-headphone.png" alt="Headphone">
       <p>Headphone</p>
-      <button>Explore</button>
+      <a href="headphones.php" class="btn-explore">Explore</a>
     </div>
   </div>
 </section>
