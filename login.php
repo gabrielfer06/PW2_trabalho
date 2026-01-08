@@ -4,7 +4,7 @@ session_start();
 // 1. Configurações da Base de Dados
 $host = "localhost";
 $user_db = "u506280443_gabfer"; // Verifique se o seu utilizador do MySQL é este
-$pass_db = "SUA_SENHA_AQUI";    // Coloque a senha do seu banco de dados
+$pass_db = "oEfr0cI6;Eq";    // Coloque a senha do seu banco de dados
 $db_name = "u506280443_gabferDB";
 
 // 2. Criar a conexão
