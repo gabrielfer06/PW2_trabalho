@@ -83,7 +83,7 @@ $produtos = [
         'imagem' => 'imagens/waterproof-smartwatch-1 (1).png',
         'desc' => 'Relógio inteligente totalmente submersível até 5ATM.'
     ],
-    // Adiciona estes ao array $produtos dentro de detalhes_produto.php
+    
     10 => [
         'nome' => 'Advanced Laptop',
         'preco' => '300.00',
@@ -108,7 +108,7 @@ $produtos = [
         'imagem' => 'imagens/space-edition-laptop.png',
         'desc' => 'Design futurista inspirado na exploração espacial com acabamentos premium em titânio.'
     ],
-    // Adicionar dentro do array $produtos em detalhes_produto.php
+    
     40 => [
         'nome' => 'Bluetooth Airpods',
         'preco' => '70.00',
@@ -139,7 +139,7 @@ $produtos = [
         'imagem' => 'imagens/wireless-headphone (1).png',
         'desc' => 'Cancelamento de ruído ativo e bateria para 40 horas de música ininterrupta.'
     ],
-    // Mobile & Tablets
+  
     20 => [
         'nome' => 'Advanced Smartphone',
         'preco' => '150.00',
@@ -164,7 +164,7 @@ $produtos = [
         'imagem' => 'imagens/Triple-camera-Smartphone.png',
         'desc' => 'Captura momentos inesquecíveis com o sistema de tripla câmara de alta resolução.'
     ],
-    // Smartwatches
+    
     30 => [
         'nome' => 'Smartwatch Series',
         'preco' => '50.00',
@@ -192,10 +192,10 @@ $produtos = [
     
 ];
 
-// 2. Capturar o ID enviado pelo link
+
 $id = isset($_GET['id']) ? $_GET['id'] : 0;
 
-// 3. Verificar se o produto existe no nosso "banco de dados"
+
 if (array_key_exists($id, $produtos)) {
     $produto = $produtos[$id];
 } else {
