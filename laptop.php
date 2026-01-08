@@ -110,7 +110,7 @@ $cartCount = isset($_SESSION['carrinho']) ? count($_SESSION['carrinho']) : 0;
 
     <div class="product">
       <a href="detalhes_produto.php?id=13">
-        <img src="imagens/space-edition-laptop.png">
+        <img src="imagens/Space-edition-laptop.png">
       </a>
       <p>Space Edition Laptop</p>
       <span class="price">€150.00</span><br>
